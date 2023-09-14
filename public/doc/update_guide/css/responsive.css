@@ -1,0 +1,55 @@
+/*
+ ================================
+ Author: Araf Karim (@arafkarim)
+ Template: Documentation Template
+ Version: 1.0
+ ================================
+*/
+
+@media screen and (max-width: 600px) {
+  /* topnav */
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+	float: right;
+	display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+    margin-bottom: -111px;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 63px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav a:nth-of-type(1){
+    margin-top: 45px;
+  }
+  .topnav h2{text-align: center;}
+  .topnav h2 span{
+    text-align: center;
+    width: 100%;
+  }
+  .menu-right{float: none;}
+  .menu-right a:nth-child(1),
+  .menu-right a:nth-child(2),
+  .menu-right a:nth-child(3){
+	display: none;
+  }
+  
+  /* accordian */
+  .col-table-cell{min-height: auto;}
+}
+
+@media screen and (max-width: 440px) {
+  /* topnav */
+  .topnav.responsive .icon{top: 75px;}
+  
+  /* main-container */
+  .main-container{margin-top: 140px;}
+}

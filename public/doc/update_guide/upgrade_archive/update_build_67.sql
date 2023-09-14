@@ -1,0 +1,1 @@
+ALTER TABLE `rose_users` ADD `lang` CHAR(20) NOT NULL DEFAULT 'en' AFTER `ins`;

@@ -1,0 +1,1 @@
+ALTER TABLE `rose_quotes` ADD `proposal` TEXT NULL DEFAULT NULL AFTER `r_time`;

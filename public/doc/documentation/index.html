@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free bootstrap documentation template">
+    <title>Rose Billing Account System</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar-themes.css">
+    <link rel="stylesheet" href="css/zoomify.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+
+<body>
+<div class="page-wrapper toggled light-theme">
+    <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+            <!-- sidebar-brand  -->
+            <div class="sidebar-item sidebar-brand text-white font-weight-bold">Documentation</div>
+            <!-- sidebar-header  -->
+            <!-- sidebar-search  -->
+            <div class="sidebar-item sidebar-search">
+                <div>
+                    <div class="input-group">
+                        <input type="text" class="form-control search-menu" placeholder="Press Ctrl+F to search"
+                               readonly>
+                        <div class="input-group-append"> <span class="input-group-text">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </span></div>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar-menu  -->
+            <div class=" sidebar-item sidebar-menu">
+                <ul>
+
+                    <li class="sidebar-dropdown">
+                        <a href="#"> <i class="fa fa-list"></i> <span class="menu-text">Installation</span>
+                            <span class="badge badge-pill badge-primary">8</span> </a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li><a href="#intro">Introduction</a></li>
+                                <li><a href="#Step1">Step 1</a></li>
+                                <li><a href="#cPanel">cPanel Installations</a></li>
+                                <li><a href="#XAMPP">Simple XAMPP Install</a></li>
+                                <li><a href="#XAMPP2">Advanced XAMPP Install</a></li>
+                                <li><a href="#Linux">Linux Installations</a></li>
+                                <li><a href="#Process">Installation Process</a></li>
+                                <li><a href="#app_login">App Login</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#dashboard"> <i class="fa fa-home"></i> <span
+                                class="menu-text">App Dashboard Details</span> </a>
+                    </li>
+                    <li>
+                        <a href="#business_settings"> <i class="fa fa-building"></i> <span
+                                class="menu-text">Business Details Setup</span> </a>
+                    </li>
+                    <li class="sidebar-dropdown">
+                        <a href="#"> <i class="fa fa-cog"></i> <span class="menu-text">App Configuration</span>
+                            <span class="badge badge-pill badge-primary">22</span> </a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li><a href="#localization_settings">Localization Settings</a></li>
+                                <li><a href="#TRANSACTION_CATEGORIES">TRANSACTION CATEGORIES</a></li>
+                                <li><a href="#BILLING_SETTINGS_PREFERENCE">BILLING SETTINGS</a></li>
+                                <li><a href="#Tax_Discount_Management">Tax & Discount Management</a></li>
+                                <li><a href="#PREFIX_MANAGEMENT">PREFIX Management</a></li>
+                                <li><a href="#TERM_MANAGEMENT">Billing Terms Management</a></li>
+                                <li><a href="#PAYMENT_PREFERENCES">PAYMENT PREFERENCES</a></li>
+                                <li><a href="#CURRENCY_MANAGEMENT">CURRENCY MANAGEMENT</a></li>
+                                <li><a href="#BANK_MANAGEMENT">BANK MANAGEMENT</a></li>
+                                <li><a href="#Payment_Gateways">Payment Gateways</a></li>
+                                <li><a href="#ACCOUNTS_TRANSACTIONS_PREFERENCE">ACCOUNTS & TRANSACTIONS</a></li>
+                                <li><a href="#EMAIL_SMS">EMAIL SETTINGS & Sms Gateway</a></li>
+                                <li><a href="#EMAIL_ALERT_SETTINGS">EMAIL ALERTS & NOTIFICATIONS SETTINGS</a></li>
+                                <li><a href="#ManageTemplates">Manage Email & SMS Templates</a></li>
+                                <li><a href="#CURRENCY_EXCHANGE">CURRENCY EXCHANGE</a></li>
+                                <li><a href="#CUSTOM_FIELD">CUSTOM FIELD MANAGEMENT</a></li>
+                                <li><a href="#PRODUCTUNIT">PRODUCT UNIT VARIABLE MANAGEMENT</a></li>
+                                <li><a href="#cron">CRON JOBS</a></li>
+                                <li><a href="#WEB_UPDATE">WEB UPDATE WIZARD</a></li>
+                                <li><a href="#EMPLOYEE_SELF_ATTENDANCE">EMPLOYEE SELF ATTENDANCE</a></li>
+                                <li><a href="#THEME_SETTINGS">THEME SETTINGS & BILL Print STYLE</a></li>
+                                <li><a href="#Captcha">Enable Google Captcha</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar-dropdown">
+                        <a href="#"> <i class="fa fa-cubes"></i> <span class="menu-text">Major Modules</span>
+                            <span class="badge badge-pill badge-primary">7</span> </a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#Invoice"> <i class="fa fa-folder"></i> <span
+                                            class="menu-text">Invoices</span> </a>
+                                </li>
+                                <li>
+                                    <a href="#Customers"> <i class="fa fa-folder"></i> <span
+                                            class="menu-text">Customers</span> </a>
+                                </li>
+                                <li>
+                                    <a href="#Stock"> <i class="fa fa-folder"></i> <span class="menu-text">Stock Manager Section</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#ACCOUNTS"> <i class="fa fa-folder"></i> <span
+                                            class="menu-text">ACCOUNTS</span> </a>
+                                </li>
+                                <li>
+                                    <a href="#HRM"> <i class="fa fa-folder"></i> <span class="menu-text">HRM</span> </a>
+                                </li>
+                                <li>
+                                    <a href="#Projects"> <i class="fa fa-folder"></i> <span
+                                            class="menu-text">Projects Management & Tasks</span> </a>
+                                </li>
+                                <li>
+                                    <a href="#Invoice"> <i class="fa fa-folder"></i> <span
+                                            class="menu-text">Invoices</span> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                      <li>
+                        <a href="#pos"> <i class="fa fa-shopping-cart"></i> <span
+                                class="menu-text">POS</span> </a>
+                    </li>
+                    <li>
+                        <a href="#help"> <i class="fa fa-question-circle"></i> <span
+                                class="menu-text">Help & Support</span> </a>
+                    </li>
+
+                      <li>
+                        <a href="#version"> <i class="fa fa-ruler-vertical"></i> <span
+                                class="menu-text">Version History</span> </a>
+                    </li>
+                     <li>
+                        <a href="#credits"> <i class="fa fa-file-code"></i> <span
+                                class="menu-text">Files & Credits</span> </a>
+                    </li>
+
+                     <li>
+                        <a href="#developer"> <i class="fa fa-code"></i> <span
+                                class="menu-text">Developers</span> </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- sidebar-menu  -->
+        </div>
+        <!-- sidebar-footer  -->
+        <div class="sidebar-footer">
+            <div class="dropdown">
+                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
+                        class="fa fa-bell"></i> <span class="badge badge-pill badge-primary notification">1</span> </a>
+                <div class="dropdown-menu notifications" aria-labelledby="dropdownMenuMessage">
+                    <div class="notifications-header"><i class="fa fa-bell"></i> Notifications</div>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <div class="notification-content">
+                            <div class="icon"><i class="fas fa-check text-success border border-success"></i></div>
+                            <div class="content">
+                                <div class="notification-detail">Check updates</div>
+
+                            </div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-center" href="#">All notifications</a></div>
+            </div>
+            <div>
+                <a id="pin-sidebar" href="#"> <i class="fa fa-power-off"></i> </a>
+            </div>
+            <div class="pinned-footer">
+                <a href="#"> <i class="fas fa-ellipsis-h"></i> </a>
+            </div>
+        </div>
+    </nav>
+    <!-- page-content  -->
+    <main class="page-content">
+        <div id="overlay" class="overlay"></div>
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center p-3 border-bottom">
+                <div class="col-md-1">
+                    <a id="toggle-sidebar" class="btn rounded-0 p-3" href="#"> <i class="fas fa-bars"></i> </a>
+                </div>
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-4 text-right"><a href="https://codecanyon.net/user/ultimatekode/portfolio"
+
+                                                    class="btn btn-sm btn-primary btn-rounded">View Product
+                    Portfolio</a></div>
+            </div>
+            <div class="row p-lg-4">
+                <article class="main-content col-md-12 pr-lg-5">
+                    <!-- title -Add bootstrap helpers for spacing -->
+                    <h1 class="mb-2 mb-3" id="Intro">Introduction</h1>
+                    <hr>
+                    <div class="alert alert-dark">
+                        <ul>
+                            <li><strong>Item Name : </strong>Rose Billing - Accounting, CRM and POS Software
+                            </li>
+                            <li><strong>Documentation : </strong> <small>Applicable to</small> v 3.0 + </li>
+                            <li><strong>Author : </strong> <a href="https://codecanyon.net/user/ultimatekode"
+                                                              target="_blank">UltimateKode</a>
+                            </li>
+                            <li><strong>Support : </strong> <a href="http://helpdesk.ultimatekode.com/" target="_blank">http://helpdesk.ultimatekode.com/</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--//title -->
+                    <div>
+                        <p>First of all, Thank you so much for purchasing this application and for being
+                            our
+                            loyal customer.
+                            <strong>You are awesome!</strong>
+                            <br> You are entitled to get free lifetime updates to this product +
+                            exceptional support from the author directly.
+                        </p>
+
+                        <p>This documentation is to help you regarding each step of usages.
+                            Please go through the documentation carefully to understand how this application is work. PHP with Laravel, HTML, CSS, JS and MySQL knowledge is required to customize this application. You may learn basics <a
+                                    href="http://www.w3schools.com/" target="_blank">here</a>, <a
+                                    href="https://developer.mozilla.org/" target="_blank">here</a>. </p>
+
+
+                        <div class="alert alert-danger">
+                            <p><i class="fa fa-exclamation-triangle"></i> Be careful while editing the
+                                application. If not edited properly, the logical and design layout may
+                                break completely.
+                                <br> No support is provided for faulty customization.
+                            </p>
+                        </div>
+                        <div class="alert alert-primary d-flex justify-content-start align-items-center" role="alert">
+                            <span class="fa fa-info-circle mr-4"></span>
+                            <p class="m-0"> <strong>Other Available Guides: </strong> <br>1. Translation guide to improve translation.<br>2. Troubleshoot guide to troubleshoot and help.<br>3. Update guide to update.<br>4. How to videos guide on youtube. </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Sep -->
+
+                    <hr class="my-5" id="Step1">
+
+                    <!-- alert -->
+
+                    <!-- heading -->
+                    <h3 class="font-weight-bold mb-2">
+                        1. App setup
+                    </h3>
+                    <p> To get started, you need to do the following: </p>
+                    <h2 class="lead mb-3">Requirements</h2>
+                    <p>You will need the following requirements to install this application.</p>
+                    <ol>
+                        <li>Hosting Account with good RAM(memory) - minimum memory requirement to host a Laravel Project
+                            is 512MB
+                        </li>
+                        <li>FTP Tool to upload files to Server (eg: <a
+                                href="https://filezilla-project.org/download.php?type=client"
+                                target="_blank">FileZilla</a>)
+                        </li>
+                        <li>Web Browser to run the application (eg: Google Chrome or Mozilla
+                            Firefox)
+                        </li>
+
+                        <li>Server should have at least PHP 7.2 or greater and MySQL 5.6+
+                            version
+                        </li>
+                    </ol>
+                    <hr class="my-5" id="Installation">
+
+                    <!-- alert -->
+
+                    <!-- heading -->
+                    <h3 class="font-weight-bold mb-2">
+                        2. Installation
+                    </h3>
+
+
+                    <h2 class="lead mb-3"  id="cPanel">2.A cPanel Install</h2>
+                    <ol>
+                        <li  class="mt-3 mb-3">Video Guide <a href="https://www.youtube.com/watch?v=-LUAlxLcOI0">youtube.com/watch?v=-LUAlxLcOI0</a></li>
+                        <li  class="mt-3 mb-3">Login to you cPanel</li>
+                        <li class="mt-3  mb-3">Create a sub-domain<br><img src="images/c1.png" class="img-fluid"></li>
+                        <li class="mt-3  mb-3">Go to file manager and your sub-domain document root<br><img src="images/c2.png" class="img-fluid"></li>
+                        <li class="mt-3  mb-3">Upload & Extract files_to_upload from rose setup to billing.yourdomain.com folder<br><img src="images/c3.png" class="img-fluid"></li>
+                        <li class="mt-3  mb-3">create a database - <br><img src="images/c4.png" class="img-fluid"></li>
+
+                         <li>Jump to section C <a href="#Process" class="font-weight-bold"> <i class="fa fa-hand-point-right"></i> Here</a> </li>
+                    </ol>
+
+<hr>
+                    <h2 class="lead mt-3 mb-3"  id="XAMPP">2.B. Simple Mode XAMPP Install (only for testing)</h2>
+                    <ol>
+                        <li>Download and Install XAMPP - <strong>Do not (never) Install in C Drive </strong></li>
+                        <li>Open your xampp/htdocs folder</li>
+                        <li>Empty htdocs folder</li>
+                        <li>Extract files_to_upload from rose setup to htdocs folder</li>
+                        <li>Open XAMPP From Start Menu -> Start Apache and MySQL</li>
+                        <li>Visit localhost/phpmyadmin -> create a database - default database user name is root and
+                            password is blank
+                        </li>
+                        <li>Visit http://localhost/public -> it will start the installation</li>
+                        <li>Enter your details installation process</li>
+                        <li>Jump to section C <a href="#Process" class="font-weight-bold"> <i class="fa fa-hand-point-right"></i> Here</a> </li>
+                    </ol>
+                    <h2 class="lead mt-3 mb-3" id="XAMPP2">2.C. Advanced XAMPP Install (with virtual-host setup)</h2>
+                    <ol>
+                        <li>Download and Install XAMPP - <strong>Do not (never) Install in C Drive </strong>, Install it
+                            D drive
+                        </li>
+                        <li>Download notepad++</li>
+                        <li>Navigate to D:/xampp/apache/conf/extra <br><img src="images/x1.png" class="img-fluid"></li>
+                        <li>Open and edit httpd-vhosts.conf with notepad++<br><img src="images/x.png" class="img-fluid">
+                            <figure class="highlight"><pre><code class="language-php" data-lang="php">
+&lt;VirtualHost *:80&gt;
+ DocumentRoot "D:/server/htdocs"
+ ServerName localhost
+ &lt;Directory "D:/server/htdocs"&gt;
+ &lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+
+&lt;VirtualHost *:80&gt;
+ DocumentRoot "D:/server/htdocs/rose/public"
+ ServerName rose.localhost
+ &lt;Directory "D:/server/htdocs"&gt;
+ &lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+                                         </code></pre>
+                            </figure>
+                        </li>
+
+                        <li>Go to start -menu , right click on notepad+++ and run as <strong>administrator</strong></li>
+                        <li>in NotePad++ > File Menu > Open and Navigate to C:\Windows\System32\drivers\etc\hosts file
+                        </li>
+                        <li>Paste below code save
+                            <figure class="highlight"><pre><code class="language-php" data-lang="php">
+127.0.0.1       localhost
+127.0.0.1       rose.localhost
+
+                                    </code></pre>
+                            </figure>
+                        </li>
+                        <li>Open XAMPP From Start Menu -> <strong>Re-Start Apache and MySQL</strong></li>
+                         <li>Jump to section C <a href="#Process" class="font-weight-bold"> <i class="fa fa-hand-point-right"></i> Here</a> </li>
+                    </ol>
+                    <br>
+<hr>
+                    <h2 class="lead mt-3 mb-3" id="Linux">2.D. Linux Install (with virtual-host setup)</h2>
+                    <ol>
+                        <li>Download and Install XAMPP/LAMP  <a href="https://www.apachefriends.org/download.html" > <i class="fa fa-link"></i> Here</a>
+                        </li>
+                         <li>Enable custom virtual hosts Open Terminal > <code>sudo gedit /opt/lampp/etc/httpd.conf</code></li>
+                        <li class="mb-3">Search <pre><code># Virtual hosts
+#Include etc/extra/httpd-vhosts.conf</code></pre>
+                            Change <code>#Include to Include</code> and save
+                        </li>
+                        <li>Enable custom virtual hosts Open Terminal > <code>sudo gedit /opt/lampp/etc/httpd-vhosts.conf</code></li>
+
+
+                        <li><br>
+                            <figure class="highlight"><pre><code class="language-php" data-lang="php">
+&lt;VirtualHost *:80&gt;
+ DocumentRoot "/opt/lampp/htdocs"
+ ServerName localhost
+ &lt;Directory "/opt/lampp/htdocs"&gt;
+ &lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+
+&lt;VirtualHost *:80&gt;
+ DocumentRoot "/opt/lampp/htdocs/public"
+ ServerName rose.localhost
+ &lt;Directory "/opt/lampp/htdocs/public"&gt;
+ &lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+                                         </code></pre>
+                            </figure>
+                        </li>
+
+                        <li>Go to terminal and enter <code>sudo gedit /etc/hosts</code></li>
+
+                        <li>Paste below code save
+                            <figure class="highlight"><pre><code class="language-php" data-lang="php">
+127.0.0.1       localhost
+127.0.0.1       rose.localhost
+
+                                    </code></pre>
+                            </figure>
+                        </li>
+                        <li> <strong>Re-Start Apache and MySQL</strong>Terminal > <code>sudo /opt/lampp/xampp stop</code> <code>sudo /opt/lampp/xampp start</code></li>
+                         <li>Jump to section C <a href="#Process" class="font-weight-bold"> <i class="fa fa-hand-point-right"></i> Here</a> </li>
+                    </ol>
+                    <br> <br>
+
+
+
+                    <h2 class="lead mb-3" id="Process">Installation Process</h2>
+                    <ol>
+                           <li class="mb-3"><p> Close the all browser tabs and clear your cache or open an Incognito window (Chrome Users: Press Ctrl + Shift + n)</p></li>
+                          <li class="mb-3"><p> Open  http(s)://yourdomain.com </p></li>
+                        <li class="mb-3"><p> Step 1 - Read and agree to the license</p><img src="images/install-1.png"
+                                                                                            class="img-fluid"></li>
+                        <li class="mb-3"><p> Step 2 - Check Requirements</p><img src="images/install-requirements.png"
+                                                                                 class="img-fluid"></li>
+                        <li class="mb-3"><p> Step 3 - Check Permissions</p><img src="images/install-permissions.png"
+                                                                                class="img-fluid"></li>
+
+                    </ol>
+
+
+                    <!-- Sep -->
+                    <hr class="my-5" id="app_login">
+                    <h3 class="font-weight-bold mb-2">
+                        3. App Login
+                    </h3>
+                    <p>After successful installation you will redirected login section, use your email that entered
+                        during the installation with the default password 123456 </p>
+                    <p>
+                        <br><img src="images/app-login.png" class="img-fluid">
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="dashboard">
+                    <h3 class="font-weight-bold mb-2">
+                        4. App Dashboard Details
+                    </h3>
+                    <p>After successful login you will redirected the dashboard </p>
+                    <p>
+                        <br><img src="images/dashboard.png" class="img-fluid">
+                    <ul>
+                        <li>4.1 - Admin Settings - settings Related to the company/business - Only Business Owner can
+                            access it
+                        </li>
+                        <li>4.2 - Choose your language</li>
+                        <li>4.3 - Logged user account management - You can edit your profile or change the password</li>
+                        <li>4.4 - Today Income - The total amount you received with all payments methods , total income
+                            can be different from total sales - total sales is gross invoice value while total income is
+                            actual incoming payment including only paid/partial paid invoices
+                        </li>
+                        <li>4.5 - Today Expense - Total outgoing amount</li>
+                        <li>4.6 - Revenue is Today Income - Today Expense</li>
+                        <code>Tip: You can define the income and expense transactions category in admin settings </code>
+                        <li>4.7 - Income vs Expense of the the month</li>
+                        <li>4.8 - Your recent tasks</li>
+                        <li>4.9 - Low stock products list</li>
+                    </ul>
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="business_settings">
+                    <h3 class="font-weight-bold mb-2">
+                        5. Business Details Setup
+                    </h3>
+                    <p>Admin Settings >BUSINESS SETTING</p>
+                    <p>Here you can update Business Details</p>
+                    <p>
+                        <br><img src="images/business-settings.png" class="img-fluid">
+
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="localization_settings">
+                    <h3 class="font-weight-bold mb-2">
+                        6. Localization Settings
+                    </h3>
+                    <p>In this section you can update your date format and timezone</p>
+
+                    <p>
+                        <br><img src="images/business-settings-localization.png" class="img-fluid">
+
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="TRANSACTION_CATEGORIES">
+                    <h3 class="font-weight-bold mb-2">
+                        7. TRANSACTION CATEGORIES
+                    </h3>
+                    <p>In this section you can add and update the TRANSACTION CATEGORIES. Do not delete default
+                        categorise as these are required to display some charts and calculations.</p>
+
+                    <p>
+                        <br><img src="images/transactioncategories.png" class="img-fluid">
+
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="DEFAULT_STATUSES">
+                    <h3 class="font-weight-bold mb-2">
+                        8. DEFAULT STATUSES
+                    </h3>
+                    <p>In this section you can add and update the Default Status. </p>
+                    <p>Default Statuses are required by the Project and Task Manager to judge the direction of tasks and
+                        projects</p>
+
+                    <p>
+                        <br><img src="images/business-settings-status.png" class="img-fluid">
+
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="BILLING_SETTINGS_PREFERENCE">
+                    <h3 class="font-weight-bold mb-2">
+                        9. BILLING SETTINGS PREFERENCE
+                    </h3>
+                    <p>In this section you can update the Default Tax, Discount format and warehouse. To add items click
+                        on the red Plus icon.</p>
+
+
+                    <p>
+                        <br><img src="images/business-settings-billing-preference.png" class="img-fluid">
+
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="Tax_Discount_Management">
+                    <h3 class="font-weight-bold mb-2">
+                        10. Tax & Discount Management
+                    </h3>
+                    <p>In this section you can add and update the Tax & Discount types. To set default check 8. BILLING
+                        SETTINGS PREFERENCE </p>
+
+                    <p>
+                        <br><img src="images/additionals.png" class="img-fluid">
+
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="PREFIX_MANAGEMENT">
+                    <h3 class="font-weight-bold mb-2">
+                        11. PREFIX MANAGEMENT
+                    </h3>
+                    <p>In this section you can update the Prefixes of respected modules.</p>
+
+                    <p>
+                        <br><img src="images/prefixes.png" class="img-fluid">
+
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="TERM_MANAGEMENT">
+                    <h3 class="font-weight-bold mb-2">
+                        12. TERM MANAGEMENT
+                    </h3>
+                    <p>In this section you can manage billing terms, You can select module for the terms</p>
+
+                    <p>
+                        <br><img src="images/terms.png" class="img-fluid">
+                        <br><img src="images/terms-create.png" class="img-fluid">
+
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="POS_PREFERENCE">
+                    <h3 class="font-weight-bold mb-2">
+                        13. POS PREFERENCE
+                    </h3>
+                    <p>Go to POS <a href="#pos" class="font-weight-bold"> <i class="fa fa-hand-point-right"></i> Here</a></p>
+
+                    <!-- Sep -->
+                    <hr class="my-5" id="PAYMENT_PREFERENCES">
+                    <h3 class="font-weight-bold mb-2">
+                        14. PAYMENT PREFERENCES
+                    </h3>
+                    <p>In this section you can set <br> - Currency - your default business currency for invoices and
+                        other bills <br>- Online payment - It will add a card payment button on invoices public preview<br>- Online payment Account - The online paid amount will reflect in the selected account.
+                    </p>
+
+                    <p>
+                        <br><img src="images/business-settings-payment-preference.png" class="img-fluid">
+
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="CURRENCY_MANAGEMENT">
+                    <h3 class="font-weight-bold mb-2">
+                        15. CURRENCY MANAGEMENT
+                    </h3>
+                    <p>In this section you can multiple currencies <br> - you can select these currencies during invoice
+                        and bill creation. </p>
+
+                    <p>
+                        <br><img src="images/currencies.png" class="img-fluid">
+                        <br><img src="images/currencies-create.png" class="img-fluid">
+
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="BANK_MANAGEMENT">
+                    <h3 class="font-weight-bold mb-2">
+                        16. BANK MANAGEMENT
+                    </h3>
+                    <p>In this section you can add banks account <br> - You customer can view these bank account details
+                        on the public preview of invoices. </p>
+
+                    <p>
+                        <br><img src="images/banks.png" class="img-fluid">
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="Payment_Gateways">
+                    <h3 class="font-weight-bold mb-2">
+                        17. Payment Gateways
+                    </h3>
+                    <p>In this section you can add Payment Gateways <br> - You customer can pay with these gateways on
+                        the public preview of invoices. </p>
+                    <p>At time of the release of the app Paypal and Stripe are added but in future, you may see more
+                        gateways </p>
+                    <h5>A. Stripe Setup </h5>
+                    <p> - Create a stripe account and login</p>
+                    <p> - Go to developers section and obtain public key and private key and enter them on respected
+                        fields </p>
+                    <p> - Currency Code - as per your location and account </p>
+                    <p> - Surcharge - you can add to manage your gateways charges </p>
+                    <p> - Other - the field can be ignored </p>
+
+                    <p>
+                        <br><img src="images/usergatewayentries-create.png" class="img-fluid">
+                    </p>
+                    <h5>A. Paypal Setup </h5>
+                    <p> - Create a stripe account and login (Developer should create a sandbox account)</p>
+                    <p> - Go to Paypal developers section and create an app </p>
+                    <p> - After app creation you will receive Paypal client id and secret </p>
+                    <p> - Surcharge - you can add to manage your gateways charges </p>
+                    <p> - Other - the field can be ignored </p>
+
+                    <p>
+                        <br><img src="images/usergatewayentries-create-paypal.png" class="img-fluid">
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="ACCOUNTS_TRANSACTIONS_PREFERENCE">
+                    <h3 class="font-weight-bold mb-2">
+                        18. ACCOUNTS & TRANSACTIONS PREFERENCE
+                    </h3>
+                    <p>In this section you can set <br> - Sales Transaction Category - your default business Sales
+                        Transaction Category for invoices <br>- Purchase Transaction Category - your default business
+                        Purchase Transaction Category for Purchase orders<br>- Account Types - Example:
+                        Basic,Assets,Income,Expenses, these can be used during accout creation
+                        <br>- Payment Methods - Example: Cash,Bank Transfer,Cheque,Prepaid Card,Other
+                        <br>- Dual Entry Accounting - It will create a secondary transaction in selected account
+                    </p>
+
+                    <p>
+                        <br><img src="images/business-settings-accounts.png" class="img-fluid">
+
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="EMAIL_SMS">
+                    <h3 class="font-weight-bold mb-2">
+                        19. EMAIL SETTINGS & Sms Gateway
+                    </h3>
+                    <p>Rose application utilize SMTP protocol to send its all emails including (invoice notifications,
+                        user password reset). You must configure SMTP correctly to send emails.</p>
+                    <h5>EMAIL SETTINGS</h5>
+                    <p>A. Email System :Use Default System Settings<br>If you are using this option than you must set
+                        the details in your_project> .env file </p>
+                     <ol>
+                        <li class="mt-3  mb-3">Open you project directory </li>
+                           <li class="mt-3  mb-3">Here you will get  <code>.env</code> (if you are not able to view file , please enable to show the hidden dot files in your file manager) </li>
+                    </ol>
+                    <figure class="highlight"><pre><code class="language-php" data-lang="php">
+MAIL_DRIVER = smtp
+MAIL_HOST = smtp.yourserver.com
+MAIL_PORT = 587
+MAIL_FROM = use@yourserver.com
+MAIL_FROM_NAME = User
+MAIL_USERNAME = your_smtp_user_name
+MAIL_PASSWORD = your_smtp_user_password
+MAIL_ENCRYPTION = null
+                   </code></pre>
+                    </figure>
+                    <p>B. Use Custom SMTP Settings </p>
+
+
+                    <p>
+                        <br><img src="images/business-email-sms-settings.png" class="img-fluid">
+
+                    </p>
+                    <br>
+                    <h5>Email Sending & Communication Errors</h5>
+                    <p><code> Please do not send support requests regarding your SMTP configuration.</code> the
+                        application has a perfectly tested SMTP integration so check your server credentials and configuration. <br>If send email is not working you can create a test SMTP account here <a
+                                href="https://mailtrap.io/" target="_blank">https://mailtrap.io/</a><br> as well can try
+                        some SMTP diagnostic tools, user of G Suite may face error in sending if their hosting company
+                        is not allowing the communication, in this case you can contact you hosting provider<br>Try to
+                        switch you port from 465 SSL to 587 TLS</p>
+                    <p>
+                        Special Case: For a user, SMTP settings are working for general client-side desktop and mobile
+                        applications but not for the Rose Billing
+                    <p>
+                        - The Rose billing needs a server to server communication and that can be restricted by your hosting provider or email service provider, it is different from server to client app communication.
+                    </p>
+
+                    <br>
+                    <h5>SMS Gateway Settings</h5>
+                    <p>A. <strong>SMS Gateway</strong> :Use Default System Settings<br>If you are using this option than
+                        you must set the details in your_project> .env file </p>
+                       <ol>
+                        <li class="mt-3  mb-3">Open you project directory </li>
+                           <li class="mt-3  mb-3">Here you will get  <code>.env</code> (if you are not able to view file , please enable to show the hidden dot files in your file manager) </li>
+                    </ol>
+         <figure class="highlight"><pre><code class="language-php" data-lang="php">
+TWILLIO_SID = TWILLIO_SENDER_ID
+TWILLIO_PASSWORD = TWILLIO_PASSWORD
+TWILLIO_TOKEN = TWILLIO_TOKEN
+                   </code></pre>
+                    </figure>
+                    <p>With "Default System Settings" option application will use TWILLIO Sms gateway, you can get TWILLIO_SENDER_ID
+                        ,TWILLIO_PASSWORD and TWILLIO_TOKEN from https://www.twilio.com/ </p>
+
+                    <p>B. <strong>SMS Gateway</strong> :Use Custom SMS Settings</p>
+
+                    <p>B.1 Twilio - Enter Your Twilio gateway Credentials </p>
+                    <p>B.2 TextLocal - Enter Your TextLocal gateway Credentials - Api Key & Sender ID </p>
+                    <p>B.3 Clockwork - Enter Your Clockwork gateway Credentials - Api Key & Sender ID</p>
+                    <p>B.4 msg91 - Enter Your msg91 gateway Credentials - Api Key & Sender ID </p>
+                    <p>B.5 BulkSMS Gateway (bulksms.in) - Enter Your BulkSMS Gateway (bulksms.in) gateway Credentials -
+                        Username, Password & Sender ID</p>
+                    <p>B.6 Generic - Enter Your Generic gateway Credentials <br>
+
+                    </p>
+                    <div class="alert alert-primary d-flex justify-content-start align-items-center" role="alert">
+                        <span class="fa fa-info-circle mr-4"></span>
+                        <p class="m-0"><strong>send_field_name={to_mobile},message_field_name={to_message},METHOD=POST,URL=http://api.example.com/xyz,field1=abc,field2=YYY</strong><br><br>
+                            i. Replace {to_mobile} as per your api "to" field - it can be like "to","mobile" or
+                            "numbers" etc<br><br>
+                            ii. Replace {to_message} as per your api "message" field - it can be like "message","text"
+                            or "content" etc<br><br> iii. METHOD=POST OR METHOD=GET - as per your api<br><br>
+                            iv. Replace http://api.example.com/xyz as per your api url<br><br>
+                            v. field1=abc,field2=YYY are other fixed custom fields as per your api. Example
+                            country_code=XX etc<br><br>
+
+                        </p>
+                    </div>
+                    <h5 class="mt-3">Url Shorten for SMS links</h5>
+                    <p>You can enable shorten URLs in your SMS to shrink the total size of a message. Please get your
+                        bit.ly token from your bit.ly developer section</p>
+
+                    <!-- Sep -->
+                    <hr class="my-5" id="EMAIL_ALERT_SETTINGS">
+                    <h3 class="font-weight-bold mb-2">
+                       20. EMAIL ALERTS & NOTIFICATIONS SETTINGS
+                    </h3>
+                    <div class="alert alert-warning d-flex justify-content-start align-items-center" role="alert">
+                        <span class="fa fa-info mr-4"></span>
+                        <p class="m-0"> Please, do not enable these alerts unnecessarily, it may slow the invoice and
+                            transactions creation process as the application will connect to email and SMS server.</p>
+                    </div>
+                    <p>In this section you can set - EMAIL ALERTS & NOTIFICATIONS SETTINGS<br>- New Transaction Alert
+                        <br>- Delete Transaction Alert
+                        <br>- New Invoice Alert
+                        <br>- Delete Invoice Alert
+                        <br>- Customer New Invoice Alert
+                        <br>- Customer New Invoice SMS Alert
+                        <br>- Customer New Invoice Alert
+                        <br>- Business Admin Notification Email - You will receive critical business notification
+                        related stock, expired products etc
+                    </p>
+
+                    <p>
+                        <br><img src="images/usiness-settings-notification-email.png" class="img-fluid">
+                    </p>
+
+                    <!-- Sep -->
+                    <hr class="my-5" id="ManageTemplates">
+                    <h3 class="font-weight-bold mb-2">
+                        21. Manage Email & SMS Templates
+                    </h3>
+                    <p>In this section you can edit your sms and email templates, keep {Variables} </p>
+
+                    <p>
+                        <br><img src="images/app-templates.png" class="img-fluid">
+
+                    </p>
+
+                    <!-- Sep -->
+                    <hr class="my-5" id="CURRENCY_EXCHANGE">
+                    <h3 class="font-weight-bold mb-2">
+                        22. CURRENCY EXCHANGE
+                    </h3>
+                    <p>Application has integrated currencylayer.com API. It offers a real-time currency conversion for
+                        your invoices. Accurate Exchange Rates for 168 World Currencies with data updates ranging from every 60 minutes down to stunning 60 seconds. Please visit currencylayer.com to get API key and
+                        do not forget set the CRON job for automatic base rate updates in background.</p>
+
+                    <p>
+                        <br><img src="images/business-settings-currency-exchange.png" class="img-fluid">
+
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="CUSTOM_FIELD">
+                    <h3 class="font-weight-bold mb-2">
+                        23. CUSTOM FIELD MANAGEMENT
+                    </h3>
+                    <p>In this section you can set CUSTOM FIELDS<br> - Customers <br>- Invoices<br> - Quotes <br>-
+                        Credit Notes <br>Field View can be private (employees only) and public (on public previews and
+                        print)</p>
+
+                    <p>
+                        <br><img src="images/customfields-create.png" class="img-fluid">
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="PRODUCTUNIT">
+                    <h3 class="font-weight-bold mb-2">
+                        24. PRODUCT UNIT VARIABLE MANAGEMENT
+                    </h3>
+                    <p>In this section you can create standard and mulit units <br> Standard unit value is 1 <br>Multi
+                        The unit can be with value X - Here X is a number</p>
+                    <p>Standard Type unit can be selected during product creation, while Multiple Unit can be selected
+                        during billing.
+                        Standard Type Unit Example is KG
+                        Multiple Type Unit Example is Box with a value of 50
+                        During billing, if product X has Kg Unit but multi-unit can be Box so KG*BOX=50KG</p>
+                    <p>
+                        <br><img src="images/productvariables-create.png" class="img-fluid">
+                        <br><img src="images/productvariables-create_multi.png" class="img-fluid">
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="cron">
+                    <h3 class="font-weight-bold mb-2">
+                        25. CRON JOBS
+                    </h3>
+                    <p>In this section you will get cron urls</p>
+                    <p>The software utility Cron is a time-based job scheduler. People who set up and maintain automated
+                        application task uses Cron to schedule jobs to run periodically at fixed times, dates, or intervals. Recommended Cron job scheduling is in midnight.</p>
+
+                    <p>
+                        <br><img src="images/cron.png" class="img-fluid">
+
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="WEB_UPDATE">
+                    <h3 class="font-weight-bold mb-2">
+                        26. WEB UPDATE WIZARD
+                    </h3>
+                    <p>In this section you can download and install updates with 3 clicks with this easy WebUpdater.
+                        Please remember this function will not work properly if your server has very restricted file permissions and you have to update manually. <br> Once after starting the process you must follow
+                        all 3 steps.</p>
+
+                    <p>
+                        <br><img src="images/update.png" class="img-fluid">
+
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="EMPLOYEE_SELF_ATTENDANCE">
+                    <h3 class="font-weight-bold mb-2">
+                        27. EMPLOYEE SELF ATTENDANCE and CUSTOMER SELF LOGIN
+                    </h3>
+                    <p>In this section you can EMPLOYEE SELF ATTENDANCE and CUSTOMER SELF LOGIN in the CRM section.</p>
+
+                    <p>
+                        <br><img src="images/business-settings-crm-hrm-section.png" class="img-fluid">
+
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="THEME_SETTINGS">
+                    <h3 class="font-weight-bold mb-2">
+                        28. THEME SETTINGS & BILL Print STYLE
+                    </h3>
+                    <p>In this section you can adjust the visual setting, at launch time t has only one print style but in
+                        future more styles will be added .</p>
+
+                    <p>
+                        <br><img src="images/settings-theme.png" class="img-fluid">
+
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="Captcha">
+                    <h3 class="font-weight-bold mb-2">
+                        29. Enable Google Captcha
+                    </h3>
+                    <p>In this section you can configure and enable Google Captcha.</p>
+<ol> <li class="mt-3  mb-3">Open you project directory </li>
+                           <li class="mt-3  mb-3">Here you will get  <code>.env</code> (if you are not able to view file , please enable to show the hidden dot files in your file manager) </li>
+    <li>Visit <a href="https://www.google.com/recaptcha" target="_blank" >https://www.google.com/recaptcha</a> to get keys</li>
+                        <li class="mt-3  mb-3">Change values as per screenshot and save it</li></ol>
+                    <p>
+                        <br><img src="images/cap.png" class="img-fluid">
+
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="Invoice">
+                    <h3 class="font-weight-bold mb-2">
+                        30. Create First Invoice
+                    </h3>
+                    <p>Invoice creation process is very simple with Rose Billing</p>
+                    <ul>
+                        <li>1. Search an existing client or add new client</li>
+                        <li>2. Search an existing product or add new product in stock manager</li>
+                        <li>3. To add more product click on green button with + icon near products row</li>
+                        <li>4. Change values if required and Generate the invoice</li>
+
+                    </ul>
+
+                    <p class="mt-3">
+                        <br><img src="images/app-invoices-create.png" class="img-fluid"></p>
+                    <p class="mt-3"><img src="images/invoices-create.png" class="img-fluid"></p>
+                    <p class="mt-3"> After Successful Generation you will see following buttons <br>- View (To Internal
+                        View) - Print - Preview (Public Invoic link that can be accessed without login )<br> <br><img
+                                src="images/invoices-create_success.png" class="img-fluid"></p><br>
+                    <p class="mt-3"> - Internal Invoice View <br><br><img src="images/invoices.png" class="img-fluid">
+                    </p>
+                    <p class="mt-3"> - Public Invoice View <br><br><img src="images/view-bill.png" class="img-fluid">
+                    </p>
+                    <p class="mt-3"> - Pay Invoice with Card <br><br><img src="images/view-bill-pay.png"
+                                                                          class="img-fluid"></p>
+
+                     <!-- Sep -->
+                    <hr class="my-5" id="pos">
+                    <h3 class="font-weight-bold mb-2">
+                        31. POS
+                    </h3>
+                    <p>1. To use POS panel, you need to open the drawer/register</p>
+
+                    <p>
+                        <br><img src="images/pos1.png" class="img-fluid">
+                    </p>
+                    <ul>
+                        <li>1 -Register/Drawer Status</li>
+                        <li>2 - Create Fresh Invoice</li>
+                         <li>3 - Close Register/Drawer</li>
+                         <li>4 - Add New Customer Or Search </li>
+                         <li>5 - Invoice Settings </li>
+                          <li>6 - On Hold Drafts</li>
+                          <li>7 - POS Product Search Settings</li>
+                          <li>8 - POS Product Styles</li>
+                          <li>9 - Product</li>
+                          <li>10 - Payment & Print Button</li>
+                    </ul>
+                     <p class="mt-3"> - Style 1 <br><br><img src="images/pos5.png"
+                                                                          class="img-fluid"></p>
+                     <p class="mt-3"> - Style 2 <br><br><img src="images/pos4.png"
+                                                                          class="img-fluid"></p>
+                      <p class="mt-3"> - Payment <br><br><img src="images/pos2.png"
+                                                                          class="img-fluid"></p>
+                     <p class="mt-3"> - Print <br><br><img src="images/pos3.png"
+                                                                          class="img-fluid"></p>
+                     <!-- Sep -->
+                    <hr class="my-5" id="thermal">
+                    <h3 class="font-weight-bold mb-2">
+                       32. POS Thermal Printer
+                    </h3>
+                    <p>Simple: You can use browser mode to print with browser in POS Preference  </p>
+                     <p>Advance : You can configure your network printer  </p>
+                    <p>
+                        <br><img src="images/network_print.png" class="img-fluid">
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="Customers">
+                    <h3 class="font-weight-bold mb-2">
+                        33.Customers
+                    </h3>
+                    <p>To manage Customers Go > Crm > Manage Customers</p>
+
+                    <p>
+                        <br><img src="images/customers.png" class="img-fluid">
+                    <p class="mt-3"> - View Customer Details <br><br><img src="images/customers-1.png"
+                                                                          class="img-fluid"></p>
+                    <p class="mt-3"> - Sub Contacts <br><br><img src="images/customers-2.png" class="img-fluid"></p>
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="CustomersGroups">
+                    <h3 class="font-weight-bold mb-2">
+                        34.Customer Groups
+                    </h3>
+                    <p>To manage Customers Groups Go > Crm > Manage Groups Customers</p>
+
+                    <p>
+                        <br><img src="images/customergroups.png" class="img-fluid">
+
+                    </p>
+
+                    <!-- Sep -->
+                    <hr class="my-5" id="Stock">
+                    <h3 class="font-weight-bold mb-2">
+                        35.Stock Manager Section
+                    </h3>
+                    <ul>
+                        <li>Please check Menu > Stock manager</li>
+                        <li>To manage Products</li>
+                        <li>To manage Product Purchase Orders</li>
+                        <li>To manage Product Categories</li>
+                        <li>To WAREHOUSE MANAGEMENT</li>
+                        <li>To SUPPLIER MANAGEMENT</li>
+                        <li>To MANAGE STOCK RETURN</li>
+                        <li>To MANAGE Print Product Labels</li>
+                        <li>To MANAGE Stock Transfer</li>
+                    </ul>
+
+                    <p>
+                        <br><img src="images/products-create.png" class="img-fluid">
+
+                    </p>
+                    <p class="mt-3"> - To MANAGE Print Product Custom Labels <br><br><img
+                            src="images/products-label.png" class="img-fluid"><br><br>To MANAGE Print Product Standard
+                        Labels <img src="images/products-standard.png" class="img-fluid"></p>
+
+                    <p class="mt-3"> - To MANAGE Stock Transfer <br><br><img src="images/products-stock-transfer.png"
+                                                                             class="img-fluid"></p>
+
+                    <!-- Sep -->
+                    <hr class="my-5" id="ACCOUNTS">
+                    <h3 class="font-weight-bold mb-2">
+                        36. ACCOUNT MANAGEMENT
+                    </h3>
+                    <p>To manage Accounts Groups Go > Finance > ACCOUNT MANAGEMENT</p>
+                    <p>You can add accounts type in Admin Settings > ACCOUNTS & TRANSACTIONS PREFERENCE</p>
+                    <p>Do not delete default accounts</p>
+                    <p>
+                        <br><img src="images/accounts.png" class="img-fluid">
+
+                    </p>
+                    <p class="mt-3"> - Add Account <br><br><img src="images/accounts.png" class="img-fluid"></p>
+
+                    <!-- Sep -->
+                    <hr class="my-5" id="Transaction">
+                    <h3 class="font-weight-bold mb-2">
+                        37. Transaction Management
+                    </h3>
+                    <p>To manage Transactions Groups Go > Finance > Transaction Management</p>
+                    <p>You can create financial transaction related to your business.</p>
+
+                    <p>
+                        <br><img src="images/transactions-create.png" class="img-fluid">
+
+                    </p>
+
+
+                    <!-- Sep -->
+                    <hr class="my-5" id="Projects">
+                    <h3 class="font-weight-bold mb-2">
+                        38. Projects Management & Tasks
+                    </h3>
+                    <p>To manage Projects Groups Go > Project & Tasks > Projects Management</p>
+
+
+                    <p>
+                        <br><img src="images/projects.png" class="img-fluid">
+
+                    </p>
+                    <p class="mt-3"> -Tasks <br><br><img src="images/tasks.png" class="img-fluid"></p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="Status">
+                    <h3 class="font-weight-bold mb-2">
+                        39. Status & Tags
+                    </h3>
+                    <p>In this section you can create projects status, tasks status and tags for it.</p>
+                    <p>
+                        <br><img src="images/app-miscs.png" class="img-fluid">
+                    </p>
+                    <p class="mt-3"> -Tasks <br><br><img src="images/miscs-create-.png" class="img-fluid"></p>
+                    <p class="mt-3"> -Tasks <br><br><img src="images/app-miscs-create-1.png" class="img-fluid"></p>
+
+
+                    <!-- Sep -->
+                    <hr class="my-5" id="HRM">
+                    <h3 class="font-weight-bold mb-2">
+                        40. HRM - Employee Management
+                    </h3>
+                    <p>To manage Employees Groups Go > HRM > Employee Management</p>
+                    <ul>
+                        <li>Create Employee</li>
+                        <li>Edit Employee Profiles</li>
+                        <li>Create Employee Roles</li>
+
+                    </ul>
+
+
+                    <p>
+                        <br><img src="images/hrms-create.png" class="img-fluid">
+                    </p>
+                    <p class="mt-3"> -Profile <br><br><img src="images/hrms-1.png" class="img-fluid"></p>
+
+                    <!-- Sep -->
+                    <hr class="my-5" id="Departments">
+                    <h3 class="font-weight-bold mb-2">
+                        41. Departments
+                    </h3>
+                    <p>You can classify the employees in departments </p>
+
+
+                    <p>
+                        <br><img src="images/departments.png" class="img-fluid">
+
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="Payroll">
+                    <h3 class="font-weight-bold mb-2">
+                        42. Payroll
+                    </h3>
+                    <p>Enter the salary transactions of employees </p>
+
+
+                    <p>
+                        <br><img src="images/hrms-payroll-1.png" class="img-fluid">
+
+                    </p>
+                    <!-- Sep -->
+                    <hr class="my-5" id="Miscellaneous">
+                    <h3 class="font-weight-bold mb-2">
+                        43. Miscellaneous
+                    </h3>
+                    <h5>Notes</h5>
+                    <p>
+                        <br><img src="images/notes.png" class="img-fluid">
+                    </p>
+                    <h5>Events</h5>
+                    <p>
+                        <br><img src="images/events-1.png" class="img-fluid">
+                    </p>
+                    <p>
+                        <br><img src="images/app-events-2.png" class="img-fluid">
+                    </p>
+
+
+  <!-- Sep -->
+                    <hr class="my-5" id="help">
+                    <h3 class="font-weight-bold mb-2">
+                        Help  & Support
+                    </h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Please remember you have purchased a very affordable application and you have not paid
+                                for a
+                                full-time web design agency. Occasionally we will help with small tweaks, but these requests will be put on a lower priority due to their nature. Support is also 100%
+                                optional and we provide it for your connivance, so please be patient, polite and
+                                respectful.</p>
+
+                            <p>Please visit our <a href="http://codecanyon.net/user/ultimatekode"><strong>profile
+                                page</strong></a> or ask question <a href="http://helpdesk.ultimatekode.com">http://helpdesk.ultimatekode.com</a>
+                            </p>
+                            <p>  Enter a valid email to receive ticket replies. Gmail is recommended for reliable communication. Email maybe found in SpamBox after 5 minutes (whitelist helpdesk@ulimatekode.com). If you are not receiving emails means you will not get reply notifications.</p>
+
+                            <strong>Support for our items includes:</strong>
+                            <ul>
+                                <li>* Responding to questions or problems regarding the item and its features</li>
+                                <li>* Fixing bugs and reported issues</li>
+                                <li>* Providing updates to ensure compatibility with new software versions</li>
+                            </ul>
+                            <strong>Item support does not include:</strong>
+                            <ul>
+                                <li>* Customization and installation services</li>
+                                <li>* Support for third party software and plug-ins</li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <strong>Before seeking support, please...</strong>
+                            <ul>
+                                <li>* Make sure you have checked the help & troubleshoot guide, attached with the app.
+                                </li>
+                                <li>* Make sure your question is a valid application Issue and not a customization
+                                    request.
+                                </li>
+                                <li>* Make sure you have read through the documentation before asking support on how to
+                                    accomplish a task.
+                                </li>
+                                <li>* Make sure to double check the application FAQs.</li>
+                                <li>* Try disabling any active plugins to make sure there isn't a conflict with a
+                                    plugin. And if there is this way you can let us know.
+                                </li>
+                                <li>* If you have customized your application and now have an issue, back-track to make
+                                    sure you didn't make a mistake. If you have made changes and can't find the issue,
+                                    please provide us with your changelog.
+                                </li>
+                                <li>* Almost 80% of the time we find that the solution to people's issues can be solved
+                                    with a simple "Google Search". You might want to try that before seeking support.
+                                    You might be able to fix the issue yourself much quicker than we can respond to your request.
+                                </li>
+                                <li>* Make sure to state the name of the application you are having issues with when
+                                    requesting support via CodeCanyon.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                      <!-- Sep -->
+                    <hr class="my-5" id="credits">
+                    <h3 class="font-weight-bold mb-2">
+                       Files & Credits
+                    </h3>
+                 <div class="row">
+                        <div class="col-md-12">
+                            <strong>Included Libraries</strong>
+
+                            <p>I am not the only person who wrote these codes. I used several open-source projects. My
+                                special
+                                thanks to thousands of open source community members, I can't mention their names but,
+                                all who contributed to these communities. I've used the following libraries, icons or other files as listed. These are the primary library files used to design the application.
+                                Use these to customize your application even further. </p>
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><a href="https://laravel.com/">Laravel Framework</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://jquery.com/">jQuery Library</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://getbootstrap.com/">Bootstrap Library</a></td>
+                                </tr>
+
+
+
+
+                                <tr>
+                                    <td><a href="https://github.com/PHPMailer/PHPMailer">PHP Mailer</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://morrisjs.github.io/morris.js/" target="_blank">Morris Chart</a>
+                                    </td>
+                                </tr>
+                                  <tr>
+                                    <td><a href="https://github.com/rappasoft/laravel-boilerplate">Laravel Boilerplate</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://colebemis.com/feather/" target="_blank">Feather</a></td>
+
+                                </tr>
+                                <tr>
+                                    <td><a href="http://ionicons.com/" target="_blank">Ionicons</a></td>
+
+                                </tr>
+                                <tr>
+
+                                    <td><a href="https://blog.fps.hu/274-vector-line-icons-for-free/" target="_blank">FPS
+                                        Line Icons</a></td>
+                                </tr>
+                                <tr>
+
+                                    <td><a href="https://icomoon.io/#preview-free" target="_blank">IcoMoon</a></td>
+                                </tr>
+                                <tr>
+
+                                    <td><a href="http://fontawesome.io/icons/" target="_blank">Font Awesome</a></td>
+                                </tr>
+                                <tr>
+
+                                    <td><a href="http://www.alessioatzeni.com/meteocons/" target="_blank">Meteocons</a>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td><a href="http://evil-icons.io/" target="_blank">Evil Icons</a></td>
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+
+
+                     <!-- Sep -->
+                    <hr class="my-5" id="version">
+                    <h3 class="font-weight-bold mb-2">
+                        Version History (Changelog)
+                    </h3>
+                    <p>You can find the version history (changelog.txt) file on project folder</p>
+                    <p>
+                      Once again, thank you so much for purchasing this application. As I said at the beginning, I'd be glad to help you if you have any questions relating to this application. No guarantees, but I'll do my best to assist. If you have a more general question relating to the application on Codecanyon, you might consider visiting the forums and asking your question in the "Item Discussion" section
+                    </p>
+
+
+
+
+                     <!-- Sep -->
+                    <hr class="my-5" id="developer">
+                    <h3 class="font-weight-bold mb-2">
+                        Developers
+                    </h3>
+                    <p>The application is developed with Laravel 9 </p><p> You can read the developer documentation here <a href="https://laravel.com/docs/">https://laravel.com/docs/</a> </p>
+                    <p>You can use composer to install new libraries <code>composer require vendor/package</code> but do not update or remove exiting libraries to avoid  compatibility issues</p>
+                    <table class="table">
+<thead>
+<tr>
+<th>Version</th>
+<th>Release</th>
+<th>Bug Fixes Until</th>
+<th>Security Fixes Until</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9.1</td>
+<td>29 June 2022</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+                                        <h5 class="font-weight-bold mb-2">
+                        Application Flow Chart
+                    </h5>
+                    <p>The following graphic illustrates how data flows throughout the system:</p>
+                    <p>
+                        <br><img src="images/flow-chart.png" class="img-fluid">
+                    </p>
+                    <ol class="arabic simple">
+<li>The rote serves as the front controller, initializing the base
+resources needed to run CodeIgniter.</li>
+<li>The Router examines the HTTP request to determine what should be done
+with it.</li>
+<li>If a cache file exists, it is sent directly to the browser, bypassing
+the normal system execution.</li>
+<li>Security. Before the application controller is loaded, the HTTP Middleware
+request and any user submitted data is filtered for security.</li>
+<li>The Controller loads the model, core libraries, helpers, and any
+other resources needed to process the specific request.</li>
+<li>The finalized View is rendered then sent to the web browser to be
+seen. If caching is enabled, the view is cached first so that on
+subsequent requests it can be served.</li>
+</ol>
+
+
+                </article>
+
+            </div>
+        </div>
+    </main>
+    <!-- page-content" -->
+</div>
+<!-- page-wrapper -->
+<!-- using online scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous">
+</script>
+<script src="js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous">
+</script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/prism.min.js"></script>
+<!-- using local scripts -->
+<!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script> -->
+<script src="js/main.js"></script>
+<script src="js/zoomify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('img').zoomify();
+
+    });
+</script>
+</body>
+</html>

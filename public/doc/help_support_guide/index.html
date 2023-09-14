@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free bootstrap documentation template">
+    <title>Rose Business Suite Troubleshoot Guide</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar-themes.css">
+    <link rel="stylesheet" href="css/zoomify.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+
+<body>
+<div class="page-wrapper toggled light-theme">
+    <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+            <!-- sidebar-brand  -->
+            <div class="sidebar-item sidebar-brand text-white font-weight-bold">Troubleshoot Guide</div>
+            <!-- sidebar-header  -->
+            <!-- sidebar-search  -->
+            <div class="sidebar-item sidebar-search">
+                <div>
+                    <div class="input-group">
+                        <input type="text" class="form-control search-menu" placeholder="Press Ctrl+F to search"
+                               readonly>
+                        <div class="input-group-append"> <span class="input-group-text">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </span></div>
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar-menu  -->
+            <div class=" sidebar-item sidebar-menu">
+                <ul>
+
+
+                    <li>
+                        <a href="#error_500"> <i class="fa fa-server"></i> <span
+                                class="menu-text">Error 500 </span> </a>
+                    </li>
+                     <li>
+                        <a href="#error_404"> <i class="fa fa-server"></i> <span
+                                class="menu-text">Page Not Found (404) </span> </a>
+                    </li>
+                     <li>
+                        <a href="#dev_mode"> <i class="fa fa-server"></i> <span
+                                class="menu-text">Development Mode </span> </a>
+                    </li>
+                       <li>
+                        <a href="#smtp"> <i class="fa fa-server"></i> <span
+                                class="menu-text">SMTP & Email</span> </a>
+                    </li>
+                      <li>
+                        <a href="#https"> <i class="fa fa-server"></i> <span
+                                class="menu-text">HTTPS Redirection</span> </a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <!-- sidebar-menu  -->
+        </div>
+        <!-- sidebar-footer  -->
+        <div class="sidebar-footer">
+
+        </div>
+    </nav>
+    <!-- page-content  -->
+    <main class="page-content">
+        <div id="overlay" class="overlay"></div>
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center p-3 border-bottom">
+                <div class="col-md-1">
+                    <a id="toggle-sidebar" class="btn rounded-0 p-3" href="#"> <i class="fas fa-bars"></i> </a>
+                </div>
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-4 text-right"><a href="https://codecanyon.net/user/ultimatekode/portfolio"
+
+                                                    class="btn btn-sm btn-primary btn-rounded">View Product
+                    Portfolio</a></div>
+            </div>
+            <div class="row p-lg-4">
+                <article class="main-content col-md-12 pr-lg-5">
+                    <!-- title -Add bootstrap helpers for spacing -->
+                    <h1 class="mb-2 mb-3" id="Intro">Rose Business Suite Troubleshoot Guide</h1>
+                    <hr>
+
+                    <!--//title -->
+                    <div>
+                        <p>Please check the application documentation to learn "How to Configure/Install the App"</p>
+
+                        <p>This guide is to help you regarding some predictable issues during or after setup. </p>
+
+
+                        <div class="alert alert-danger">
+                            <p><i class="fa fa-exclamation-triangle"></i> Be careful while editing the
+                                application. If not edited properly, the logical and design layout may
+                                break completely.
+                                <br> No support is provided for faulty customization.
+                            </p>
+                        </div><div class="alert alert-primary d-flex justify-content-start align-items-center" role="alert">
+                            <span class="fa fa-info-circle mr-4"></span>
+                            <p class="m-0"> <strong>Other Available Guides: </strong> <br>1. Translation guide to improve translation.<br>2. Documentation.<br>3. Update guide to update.<br>4. How to videos guide on youtube. </p>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Sep -->
+
+                    <hr class="my-5" id="error_500">
+
+                    <!-- alert -->
+
+                    <!-- heading -->
+                    <h3 class="font-weight-bold mb-2">
+                        1. How to Fix HTTP error code " Error 500" After Installation
+                    </h3>
+                    <p> If you are not able to access application instantly after installation and getting Error 500, you need to do the following: </p>
+                    <h2 class="lead mb-3">Check Permissions and directory owner of listed items</h2>
+                    <ol>
+                        <li class="mb-3">Hosting Account with good RAM(memory) - minimum memory requirement to host a Laravel Project
+                            is 512MB
+                        </li>
+                        <li  class="mb-3">your_project/storage and sub directories chmod 755 and chown www-data OR daemon OR as per per your server apache user
+                        </li>
+                        <li  class="mb-3">your_project/public/ chmod 755 and chown www-data OR daemon OR as per per your server apache user</li>
+                        <li  class="mb-3">If issue is not solved - You can enable the the debug/development mode <a href="#dev_mode" class="font-weight-bold"> <i class="fa fa-hand-point-right"></i> Here</a>  , it will disable the exact reason of the error.</li>
+
+                    </ol>
+
+                     <h3 class="font-weight-bold mb-2">
+                        2. How to Fix HTTP error code "500 internal server error"
+                    </h3>
+                    <p>The HTTP error code "500 internal server error." This error means there is a problem on the server-side. It is an all-purpose error, which means a serious problem in the server is preventing your application from functioning. </p>
+
+                    <ul>
+                          <li class="lead mb-3 list-unstyled">Check Permissions!</li>
+                        <li class="mb-3">An HTTP 500 error can be caused by a permissions problem with your website's files or folders. Check the permissions on all of your main folders and scripts. Most PHP files need to have their permissions set to 755.
+                        </li>
+                           <li class="lead mb-3  list-unstyled">Check the Apache Files!</li>
+                        <li  class="mb-3">An HTTP 500 error can be caused by a problem with your Apache configurations. If you have scripts or CGI programs which are generating a 500 error, check to make sure they have permission to run in the directory where they are located. Apache will not allow programs to execute by default. Permission must be given in either an .htaccess file in the directory where the program runs, or in the website's main Apache configuration file.</li>
+                        <li class="lead mb-3  list-unstyled">Check Your Server Logs!</li>
+                        <li  class="mb-3">If your problem is not solving by above steps, you need to check your log folder and troubleshoot the server. - You can enable the the debug/development mode <a href="#dev_mode" class="font-weight-bold"> <i class="fa fa-hand-point-right"></i> Here</a>  , it will disable the exact reason of the error.</li>
+
+                    </ul>
+ <hr class="my-5" id="error_404">
+
+                    <!-- alert -->
+
+                    <!-- heading -->
+                    <h3 class="font-weight-bold mb-2">
+                        3. How to Fix HTTP error code " Error 404" Page Not Found
+                    </h3>
+                   <div id="notfound"><br><br>
+
+
+
+<p>A 404 error is an HTTP status code that means that the page you were trying to reach on a server couldn't be found on their server.</p>
+
+<p><strong>Solution 1</strong></p>
+
+<p>Check the hidden .<strong>htaccess </strong>file!</p>
+
+<p>An HTTP 404 error can be caused by a problem with your Apache configurations .htaccess file. By default this file remains hidden in many systems so please enable show hidden files feature of your system and do not forget to upload it to your server directory. Some host like Namecheap skips it when the file is hidden.</p>
+
+<p>1. Please extract <strong>your_original_setup</strong>/help_support_guide /<strong>htaccess_file_to_solve_404.zip</strong><br><br>&nbsp;to your_project_directory/public.<br>
+&nbsp;</p>
+
+<p><strong>Solution 2</strong></p>
+
+<p>Make sure that the Apache mod_rewrite module is enabled.</p>
+
+<p>You can search on the internet to enable apache mod_rewrite as per your machine type like Windows WAMP, Ubuntu<br>
+&nbsp;</p>
+
+<p><strong>Solution 3</strong></p>
+
+<p>You may also, in addition to the above, if it does not work, have to change the .<strong>htaccess </strong>override rule from the apache conf file (either apache2.conf, http.conf).&nbsp;<br>
+<strong>Change the "Override None" to "Override All"</strong></p>
+
+<p>&nbsp;</p>
+
+<p><strong>Solution 4</strong></p>
+
+<p>If you get an error stating rewrite module is not found, then probably your <strong>userdir</strong><strong> </strong>module is not enabled.&nbsp;</p>
+
+</div>
+     <!-- Sep -->
+
+                    <hr class="my-5" id="dev_mode">
+<h3 class="font-weight-bold mb-2">
+                        4. How to Enable development mode
+                    </h3>
+                    <p>You can enable the development mode by editing <code>.env</code> file  </p>
+                    <ol>
+                        <li class="mt-3  mb-3">Open you project directory </li>
+                           <li class="mt-3  mb-3">Here you will get  <code>.env</code> (if you are not able to view file , please enable to show the hidden dot files in your file manager) </li>
+                        <li class="mt-3  mb-3">Change values as per screenshot and save it<br><br><img src="images/env.png" class="img-fluid"><br>&nbsp;</li>
+                        <li class="mt-3  mb-3">Please do not forget to switch back to production <code>APP_ENV=production</code> & <code>APP_DEBUG=false</code> after troubleshooting process</li>
+                    </ol>
+                       <hr class="my-5" id="smtp">
+
+                   <h3 class="font-weight-bold mb-2">5.Email Sending & Communication Errors</h3>
+                    <p><code> Please do not send support requests regarding your SMTP configuration.</code> the
+                        application has a perfectly tested SMTP integration so check your server credentials and configuration. <br>If send email is not working you can create a test SMTP account here <a
+                                href="https://mailtrap.io/" target="_blank">https://mailtrap.io/</a><br> as well can try
+                        some SMTP diagnostic tools, user of G Suite may face error in sending if their hosting company
+                        is not allowing the communication, in this case you can contact you hosting provider<br>Try to
+                        switch you port from 465 SSL to 587 TLS</p>
+                    <p>
+                        Special Case: For a user, SMTP settings are working for general client-side desktop and mobile
+                        applications but not for the Rose Billing
+                    <p>
+                        - The Rose billing needs the server to server communication and that can be restricted by your
+                        hosting provider or email service provider, it is different from server to the client app
+                        communication.
+                    </p>
+
+                                        <hr class="my-5" id="https">
+<h3 class="font-weight-bold mb-2">
+                        6. How to Redirect to HTTPS
+                    </h3>
+                    <p>You can enable the redirection if your application is loaded with sl and non ssl urls  </p>
+                    <ol>
+                        <li class="mt-3  mb-3">Open you project/public directory</li>
+                           <li class="mt-3  mb-3">Here you will get  <code>.htaccess</code> (if you are not able to view file , please enable to show the hidden dot files in your file manager) </li>
+                        <li class="mt-3  mb-3">Near Line no 23 to 25,  you will find bellow code remove # to below code</li>
+
+                  <pre>
+<span style="color:red">&lt;Remove#&gt;</span> RewriteCond %{HTTPS} !=on
+<span style="color:red">&lt;Remove#&gt;</span> RewriteCond %{HTTP:X-Forwarded-Proto} !https <span style="color:red">&lt;-- Do not remove # if redirection is not working --&gt;</span>
+<span style="color:red">&lt;Remove#&gt;</span> RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+                   </pre>
+                    </ol>
+                </article>
+
+            </div>
+        </div>
+    </main>
+    <!-- page-content" -->
+</div>
+<!-- page-wrapper -->
+<!-- using online scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous">
+</script>
+<script src="js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous">
+</script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/prism.min.js"></script>
+<!-- using local scripts -->
+<!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script> -->
+<script src="js/main.js"></script>
+<script src="js/zoomify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('img').zoomify();
+
+    });
+</script>
+</body>
+</html>

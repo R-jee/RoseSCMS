@@ -1,0 +1,1 @@
+ALTER TABLE `rose_activities` CHANGE `refer` `refer` BIGINT(20) NULL;

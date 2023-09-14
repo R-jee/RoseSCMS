@@ -1,0 +1,18 @@
+I am not the only person who wrote these codes. I used several open-source projects. My special thanks to thousands of open source community members, I can't mention their names but, all who contributed to these communities. I've used the following libraries, icons or other files as listed. These are the primary library files used to design the application. Use these to customize your application even further.
+
+Laravel Framework
+jQuery Library
+Bootstrap Library
+Admin LTE
+Material Design for Bootstrap
+Pixinvent
+PHP Mailer
+Morris Chart
+Laravel Boilerplate
+Feather
+Ionicons
+FPS Line Icons
+IcoMoon
+Font Awesome
+Meteocons
+Evil Icons

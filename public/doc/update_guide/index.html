@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Update guide</title><meta name="robots" content="noindex,nofollow">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <h2>Rose Business Suite Update Guide </h2>
+      <a href="https://codecanyon.net/user/ultimatekode/portfolio">Home</a>
+    
+      <a href="https://codecanyon.net/item/neo-billing-accounting-invoicing-and-crm-software/20896547/support">Contact</a>
+	  <span class="menu-right">
+		
+		<a href="https://codecanyon.net/item/neo-billing-accounting-invoicing-and-crm-software/20896547">Download</a>
+	  </span>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><span>Menu</span> <span id="menuClick">&#9776;</span></a>
+    </div>
+
+    <div class="main-container">
+      <div class="container-fluid">
+        <div class="row col-table">
+          <div class="col-md-3 col-table-cell" style="background: #f2f2f2;">
+            <div class="row accordion-cover">
+              <h3>Update Guide</h3>
+			  <a href="#intro" class="accordion">Introduction</a>
+			  <a href="#st1" class="accordion">1. Step One - Backup</a>
+			  <a href="#st2" class="accordion">2. Step Two</a>
+			  <a href="#st3" class="accordion">3. Step 3</a>
+			  <a href="#st4" class="accordion">4. Step 4</a>
+			 
+            </div>
+          </div>
+          <div class="col-md-7 col-table-cell">
+            <div >
+<hr><h1>A. Auto Update</h1>
+<p>1. Please go to Admin Settings>Advanced Settings>Web Update Wizard<br>2. Click on Download Update<br>3. Click on Install Update<br>4. Click on Database Update</p>
+<img src="img/step1.png"  class="img-fluid" border="0" alt=""><br><img src="img/step2.png"  class="img-fluid" border="0" alt="">
+<hr>
+
+<!--<h1>B. Manual Update</h1>			<div id="intro"><br><br>
+              <h2>How to update the Rose Business Suite from Build X to Y</h2>
+			  <p>Example X =50 and Y=53</p>
+			  <p>In this guide, I will provide you a method to easy update. This is a texual guide, <strong>you can watch the video guide here <a href="https://youtu.be/v-7fZn449tc">https://youtu.be/v-7fZn449tc</a></strong>. Before performing an update you should take your site offline by renaming the folder to avoid any data loss or payments transactions that can be done by your customer. It is compulsory that you should update the software on every new release, if you skip versions than you can not upgrade.</p>
+
+			 <div class="notes">
+                <p><strong>Note!</strong> This guide is not applicable for fresh installations.
+</p>
+                
+              </div>
+<hr></div>	<div id="st1"><br><br>
+              <h2>Step One : Backup the application</h2>
+			  <p>Please create a full backup of application ,it is mandatory. Additionally, it will be helpful in case of update failure or raise an issue. Please follow these steps.
+			  <ol>
+				<li> Login to application as business owner(admin).</li>
+				<li> Go to BACKUP & EXPORT section.</li>
+				<li> Here you will find Backup Database, download a backup of database.</li>
+				<li> Now login to server control panel.</li>
+				<li> Crate a backup folder in your server document directory, i.e. <strong>yourapp_backup</strong>.</li>
+				<li> Move your current installed Geo POS project's all files to <strong>yourapp_backup</strong> folder.</li>
+
+			  </ol> </p>
+			 
+<hr></div>
+
+<div id="st2"><br><br>
+              <h2>Step Two : Uploadling the new update</h2>
+			  <p><ol>
+			 <li> Now extract the latest package of Geo POS which has been downloaded by you recently from codecanyon.net to an other folder/location.</li>
+				<li> After extraction you will see <strong>files_to_upload</strong> folder.</li>
+				<li> Move <strong>files_to_upload</strong> folder's all files  to your current installed Geo POS project folder.  (Where you had installed the application, make sure that directory is empty.).</li>
+				<li>Do not forget upload .htaccess also becasue many it remains hidden
+			  </ol> </p>
+			 
+<hr></div>
+
+<div id="st3"><br><br>
+              <h2>Step Three : Files update</h2>
+			  <p>As we have crated a backup folder <strong>yourapp_backup</strong> in STEP ONE, go there and...
+			  </p>
+			  <div class="notes">
+Copy and replace following files from <strong>yourapp_backup</strong> to your project directory where you have recently uploaded new files. 
+			  </div>
+			  <ol>
+				<li><strong>yourapp_backup/</strong>index.php  <br><br>to<br> <br><strong>yourproject/</strong>index.php</li>
+				<li><strong>yourapp_backup/</strong>application/config/config.php  <br><br>to<br> <br><strong>yourproject/</strong>application/config/config.php</li>
+				<li><strong>yourapp_backup/</strong>application/config/database.php  <br><br>to<br> <br><strong>yourproject/</strong>application/config/database.php</li>
+				<li><strong>yourapp_backup/</strong>application/confg/lic.php  <br><br>to<br> <br><strong>yourproject/</strong>application/confg/lc.php</li>
+				<li><strong>yourapp_backup/</strong>crm/index.php  <br><br>to<br> <br><strong>yourproject/</strong>crm/index.php</li>
+				<li><strong>yourapp_backup/</strong>crm/application/config/config.php  <br><br>to<br> <br><strong>yourproject/</strong>crm/application/config/config.php</li>
+				<li><strong>yourapp_backup/</strong>crm/application/config/database.php  <br><br>to<br> <br><strong>yourproject/</strong>crm/application/config/database.php</li>
+			  </ol>
+			  
+			 <div class="notes">
+Copy and replace following files folder from <strong>yourapp_backup</strong> to your proejct directory where you have recently uploaded new files. 
+			  </div>
+
+			  <ol>
+				<li><strong>yourapp_backup/</strong>userfiles  <br><br>to<br> <br><strong>yourproject/</strong>userfiles</li></ol>
+<hr></div>
+
+
+<div id="st4"><br><br>
+          <h2>Step Four : Database update</h2>
+			
+ You have to import <a >upgrade_archive/update_build_<strong>X*</strong>.sql</a> to you database.
+
+	<br><br><br>
+	Here X* means your next build number - if your current build is 50 but avaiable build is 53 than select one-by-one<br><br><br>
+<pre>
+> upgrade_archive/update_build_<strong>51</strong>.sql
+> upgrade_archive/update_build_<strong>52</strong>.sql
+> upgrade_archive/update_build_<strong>53</strong>.sql
+</pre>
+ <br>
+		You can ignore 0KB size files - it indicated no database change in the particular build example <u>update_build_51.sql</u>.<br><br>
+
+		<hr>
+
+            </div>
+
+          </div>
+          <div class="col-md-2 col-table-cell" style="background: #f2f2f2;">
+            <div class="row">
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
